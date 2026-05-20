@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-gold: #dba764;
+   --color-primary:#FF7A59;
+   --color-primary-dark:#e85d3c;
+   --color-primary-light:#FFE8E1;
+  --color-mint:#4ECDC4;
+  --color-mint-light:#E0F7F5;
+  --color-cream:#FFFBF7;
+  --color-cream2:#FFF4EE;
+  --color-text:#1A1A2E;
+  --color-text2:#5C5C7A;
+  --color-text3:#9898B0;
+  --white:#FFFFFF;
+  --shadow1:0 4px 20px rgba(255,122,89,0.12);
+  --shadow2:0 8px 40px rgba(255,122,89,0.18);
+  --shadow3:0 2px 12px rgba(0,0,0,0.06);
+  --radius:16px;--radius-lg:24px;--radius-xl:32px;
+ 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+  min-height:100vh
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+h1,h2,h3,h4,h5{font-family:'Nunito',sans-serif}

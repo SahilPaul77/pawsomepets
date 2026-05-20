@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Nunito, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from './navbar/page'
+import Footer from './footer/page'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,24 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight:['100', '200', '300','400','500','600','700','800','900']
+});
+
+const nunito = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+  weight:['200', '300','400','500','600','700','800','900']
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight:['200', '300','400','500','600','700','800']
 });
 
 export const metadata: Metadata = {
@@ -25,9 +45,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${nunito.variable} ${jakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
