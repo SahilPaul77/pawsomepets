@@ -77,7 +77,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero1.jpg"
+          src="/images/hero2.jpg"
           className="w-full h-full object-cover opacity-40 grayscale-[0%]"
           alt="cute pets"
           fill

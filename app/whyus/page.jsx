@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#fffbf7] overflow-hidden py-10 md:py-20">
+    <section className="relative w-full bg-[#fffbf7] overflow-hidden py-10 md:py-20 rounded-xl">
       
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 2 }}
           className="text-center mb-12"
         >
           <span className="inline-block bg-orange-100 text-[#FF7A59] px-4 py-1 rounded-full text-sm font-semibold mb-4">
