@@ -77,9 +77,9 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero.jpg"
+          src="/images/hero1.jpg"
           className="w-full h-full object-cover opacity-40 grayscale-[0%]"
-          alt="Dental Studio"
+          alt="cute pets"
           fill
           priority
         />
@@ -99,7 +99,7 @@ const HeroSection = () => {
   transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
   className="inline-flex items-center gap-2 bg-orange-100 text-primary px-5 py-2 rounded-full font-bold text-sm mb-6 border border-orange-200"
         >
-          🐶 Trusted by 12,000+ happy families
+          🐶 Trusted by 5,000+ happy families
         </motion.div>
 
        <motion.h1
