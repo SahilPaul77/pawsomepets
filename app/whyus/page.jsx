@@ -39,20 +39,20 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#fffbf7] overflow-hidden py-10 md:py-20 rounded-xl">
+    <section className="relative w-full bg-[#fffbf7] overflow-hidden py-10 md:py-20">
       
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         
         {/* HEADER */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 0.7 }}
           className="text-center mb-12"
         >
           <span className="inline-block bg-orange-100 text-[#FF7A59] px-4 py-1 rounded-full text-sm font-semibold mb-4">
-            Why PawMarket
+            Pawsome Pets
           </span>
 
           <h1 className="font-extrabold text-2xl md:text-5xl leading-tight text-text font-[Nunito] mb-3">
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
         </motion.div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 ">
           {values.map((item, i) => {
             const Icon = item.icon;
 
@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
                   ease: "easeOut",
                 }}
                 whileHover={{ y: -10, scale: 1.03 }}
-                className={`relative bg-white p-10 border border-stone-100 shadow-sm ${item.position}`}
+                className={`relative bg-white p-10 border border-stone-100 shadow-sm ${item.position} rounded-lg`}
               >
                 
                 {/* ICON */}

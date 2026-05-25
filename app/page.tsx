@@ -3,6 +3,7 @@
 import Hero from './hero/page'
 import Stats from './stats/page'
 import Whyus from './whyus/page'
+import PetSection from './petsection/page'
 
 const Home = ()=>{
 return(
@@ -10,6 +11,7 @@ return(
   <Hero />
   <Stats />
   <Whyus />
+  <PetSection />
   </>
 )
 }
