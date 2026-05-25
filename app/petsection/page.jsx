@@ -55,7 +55,7 @@ export default function PuppiesSection() {
         {/* Header */}
         <div className="text-center mb-10">
           <span className="inline-block bg-orange-100 text-orange-500 text-xs font-bold px-3 py-1 rounded-md mb-3">
-            Popular Right Now
+            Popular Right Now.
           </span>
           <h2 className="text-3xl font-extrabold text-[var(--text)]">
             Puppies Looking for Their Forever Home
